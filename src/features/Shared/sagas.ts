@@ -6,7 +6,7 @@ import { callApi, apiMethod } from 'utils/apiCaller';
 
 export function* clearStore() {
   yield takeLatest(ACTIONS.CLEAR_STORE, function* (action: SharedAction) {
-    yield put({ type: ACTIONS.CLEAR_STORE });
+    yield put({ type: ACTIONS.CLEAR_REDUCERS });
   });
 }
 

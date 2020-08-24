@@ -28,7 +28,7 @@ export default (state = commonState, action: SharedAction) => {
         ...state,
         user: action.user,
       };
-    case SHARED_ACTION.CLEAR_STORE:
+    case SHARED_ACTION.CLEAR_REDUCERS:
       return { ...commonState };
     default:
       return state;

@@ -42,7 +42,7 @@ export default (state = bookingState, action: Partial<BookingAction>) => {
         }),
       };
       
-    case SHARED_ACTION.CLEAR_STORE:
+    case SHARED_ACTION.CLEAR_REDUCERS:
       return { ...bookingState };
     default:
       return state;

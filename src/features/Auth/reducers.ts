@@ -16,7 +16,7 @@ export default (state = commonState, action: Partial<AuthAction>) => {
         ...state,
         token: action.token,
       };
-    case SHARED_ACTION.CLEAR_STORE:
+    case SHARED_ACTION.CLEAR_REDUCERS:
       return { ...commonState };
     default:
       return state;
